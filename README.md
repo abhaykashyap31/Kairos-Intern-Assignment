@@ -1,5 +1,22 @@
 # Kairos Intern Take‑Home: **Scientific‑Paper Scout**
 
+## Setup & Usage
+
+1. **Install dependencies:**
+   ```sh
+   pip install requests PyPDF2
+   ```
+2. **Configure LLM provider/model:**
+   - Create a `.env` file (or set environment variables):
+     ```
+     LLM_PROVIDER=openai
+     LLM_MODEL=gpt-3.5-turbo
+     ```
+3. **Run the CLI:**
+   ```sh
+   python main.py
+   ```
+
 ## 0 — Goal
 
 Build an AI "Scientific‑Paper Scout" agent that helps a user discover and summarise recent research papers on any topic. The user interacts with the agent through a **command‑line chat** (`python main.py`). A tiny React front‑end is an **optional stretch goal**.
