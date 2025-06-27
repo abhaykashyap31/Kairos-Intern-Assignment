@@ -5,9 +5,21 @@ PyPDF2>=3.0.0,<4.0.0
 # UI
 streamlit>=1.25.0,<2.0.0
 
-# LLM Providers (optional, for real summarization)
+# Updated LLM Providers with compatible versions
 openai>=1.0.0,<2.0.0
 anthropic>=0.21.3,<1.0.0
+google-generativeai>=0.8.4
 
-# For environment variable support (if needed)
-python-dotenv>=1.0.0,<2.0.0 
+# Updated core dependencies to resolve conflicts
+pydantic>=2.7.4,<3.0.0  # Updated from 1.10.0
+python-dotenv>=1.0.1,<2.0.0  # Updated from 1.0.0
+PyYAML>=6.0,<7.0
+
+# API with updated versions
+fastapi>=0.100.0  # Updated from 0.95.1 for pydantic 2.x compatibility
+uvicorn>=0.22.0,<1.0.0
+
+# Updated ML dependencies
+grpcio>=1.49.1,<=1.67.1  # Constrained for pymilvus compatibility
+huggingface-hub>=0.20.0  # Updated for sentence-transformers
+transformers>=4.41.0,<5.0.0  # Updated for sentence-transformers
