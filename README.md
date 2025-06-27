@@ -64,6 +64,7 @@ User (CLI/React/Streamlit)
      ```sh
      cd react-frontend
      npm install
+     npm run dev
      ```
    - This will install all required packages for the web UI. You only need to do this once per environment or after changing dependencies.
 
