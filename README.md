@@ -55,14 +55,17 @@ User (CLI/React/Streamlit)
    python -m venv venv
    source venv/bin/activate  # or venv\Scripts\activate on Windows
    ```
-3. **Install dependencies:**
+3. **Install Python dependencies:**
    ```sh
    pip install -r requirements.txt
    ```
-4. **(Optional) Install frontend dependencies:**
-   ```sh
-   cd react-frontend && npm install
-   ```
+4. **(Optional) Set up the React frontend:**
+   - Change into the React frontend directory and install Node dependencies:
+     ```sh
+     cd react-frontend
+     npm install
+     ```
+   - This will install all required packages for the web UI. You only need to do this once per environment or after changing dependencies.
 
 ---
 
